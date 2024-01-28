@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-image: url('../images/bg99.png'); /* Replace with the actual path to your image */
+    background-image: url('../images/homebg.png');
     background-size: 100% 100%; /* Set background-size to cover entire container */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,12 +52,7 @@ h1
     align-items: center; /* Center items along the cross axis */
     height: 100vh; /* Set container height to 100% of the viewport height */
     text-decoration: none;
-    background-image: url('../images/homebg.png');
-    background-size: 100% 100%; /* Set background-size to cover entire container */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-   
+       
   }
   
   .flex-container {
@@ -264,7 +259,7 @@ button:hover {
   }
 
     .about {
-    color: #ad00cc;
+    color: #000000;
     font-size: 1em; 
     font-weight: bold;
     background-image: url('../images/bg99.png'); /* Replace with the actual path to your image */
