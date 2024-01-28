@@ -9,11 +9,21 @@ body {
 /* Header Styles */
 
 header {
-    background-color: #e19419;
+    background-color: #e97909;
     padding: 1px;
     text-align: center;
 }
-
+h1
+{
+    display: block;
+    font-size: 40px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #ee0b08;
+}
 .header-flex-container {
     display: flex;
     justify-content: space-between;
@@ -64,8 +74,13 @@ header {
   .flex-item {
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    text-decoration: none;
     flex: 0 0 auto;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #f60303;
   }
 
   .flex-container.left img {
@@ -168,8 +183,8 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(244, 236, 216, 0.8);
-    padding: 10px;
+    background-color: rgba(212, 168, 58, 0.8);
+    padding: 3px;
     text-align: left;
 }
 
@@ -178,7 +193,7 @@ header {
 }
 
 .bottom-flex-container a {
-    color: black;
+    color: rgb(14, 12, 12);
     margin: 0 10px;
     font-weight: bold;
     text-decoration: none;
@@ -214,4 +229,30 @@ button:hover {
     background-color: #16bd16;
 }
 
+  /* Apply a box-sizing border-box model globally */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add the viewport meta tag for mobile responsiveness */
+  meta[name="viewport"] {
+    width: device-width;
+    initial-scale: 1.0;
+  }
  
+  /* Example of a responsive image */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+   
+  /* Adjust styles for smaller screens */
+  @media only screen and (max-width: 767px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  
+  
