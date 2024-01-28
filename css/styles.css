@@ -80,13 +80,13 @@ header {
     border: 2px solid #d3c0a2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    background-image: url('../images/BackgroundPage.jpg');
+    background-image: url('../images/bglite.jpg');
     background-size: 100% 100%; /* Set background-size to cover entire container */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     color: black;
-    
+        
 }
 
 /* Novel Content Styles */
