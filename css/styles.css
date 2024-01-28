@@ -36,6 +36,11 @@ header {
     align-items: center; /* Center items along the cross axis */
     height: 100vh; /* Set container height to 100% of the viewport height */
     text-decoration: none;
+    background-image: url('../images/homebg.png');
+    background-size: 100% 100%; /* Set background-size to cover entire container */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
   
   .flex-container {
