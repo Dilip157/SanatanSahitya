@@ -46,3 +46,53 @@ function nextPage() {
         changePage(newPage);
     }
 }
+
+let interactions = {
+    like: { isClicked: false, count: 0 },
+    comment: { isClicked: false, count: 0 },
+    share: { isClicked: false, count: 0 }
+  };
+  
+  function toggleInteraction(interactionType) {
+    const button = document.getElementById(`${interactionType}Btn`);
+    const icon = document.getElementById(`${interactionType}Icon`);
+    const text = document.getElementById(`${interactionType}Text`);
+    const countElement = document.getElementById(`${interactionType}Count`);
+  
+    interactions[interactionType].isClicked = !interactions[interactionType].isClicked;
+    interactions[interactionType].count += interactions[interactionType].isClicked ? 1 : -1;
+  
+    button.classList.toggle(`${interactionType}ed`, interactions[interactionType].isClicked);
+    icon.innerHTML = interactions[interactionType].isClicked ? getInteractionIcon(interactionType) : getInactiveIcon(interactionType);
+    text.innerHTML = interactions[interactionType].isClicked ? `${interactionType.charAt(0).toUpperCase()}${interactionType.slice(1)}ed` : `${interactionType.charAt(0).toUpperCase()}${interactionType.slice(1)}`;
+    countElement.innerHTML = interactions[interactionType].count;
+  }
+  
+  function getInteractionIcon(interactionType) {
+    // Customize icons based on the interaction type
+    switch (interactionType) {
+      case 'like':
+        return '❤️';
+      case 'comment':
+        return '💬';
+      case 'share':
+        return '🔗';
+      default:
+        return '';
+    }
+  }
+  
+  function getInactiveIcon(interactionType) {
+    // Customize inactive icons based on the interaction type
+    switch (interactionType) {
+      case 'like':
+        return '🤍';
+      case 'comment':
+        return '💬';
+      case 'share':
+        return '🔗';
+      default:
+        return '';
+    }
+  }
+  
