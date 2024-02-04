@@ -246,7 +246,7 @@ button:hover {
    
   /* Adjust styles for smaller screens */
   @media only screen and (max-width: 767px) {
-    .container {
+    .container,.flex-container,.left,.right ,.flex-item{
       width: 90%;
       padding: 10px;
     }
