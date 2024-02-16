@@ -1,312 +1,325 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-image: url('../images/homebg.png');
-    background-size: 100% 100%; /* Set background-size to cover entire container */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-   
-    
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: url('../images/homebg.png');
+  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+ 
+  
 }
 /* Header Styles */
 
 header {
-    background-color: #e97909;
-    padding: 1px;
-    text-align: center;
+  background-color: #e97909;
+  padding: 1px;
+  text-align: center;
 }
 h1
 {
-    display: block;
-    font-size: 40px;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    color: #ee0b08;
+  display: block;
+  font-size: 40px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #ee0b08;
 }
 .header-flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:  #e97909;
-    padding: 10px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #e97909;
+  padding: 10px;
+  text-align: center;
 }
 
 .header-flex-container a {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
 }
 /*Home Page */
-  .container {
-    display: flex;
-    justify-content: space-between; /* Distribute items evenly across the main axis */
-    align-items: center; /* Center items along the cross axis */
-    height: 100vh; /* Set container height to 100% of the viewport height */
-    text-decoration: none;
-       
-  }
-  
-  .flex-container {
-    display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items along the cross axis */
-    text-decoration: none;
-    
-  }
-  
-  .left, .right {
-    flex: 1; /* Distribute available space equally between left and right containers */
-    text-decoration: none;
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly across the main axis */
+  align-items: center; /* Center items along the cross axis */
+  height: 100vh; /* Set container height to 100% of the viewport height */
+  text-decoration: none;
+     
 }
- 
-  
-  .center {
-    flex: 2; /* Allow the center container to take up twice as much space as left/right containers */
-  }
-  
-  .flex-item {
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    text-decoration: none;
-    flex: 0 0 auto;
-    font-family: 'Noto Sans Devanagari', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color: #f60303;
-  }
 
-  .flex-container.left img {
-    width: 500px;
-    height: 300px;
-    /* Other styles as needed */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items along the cross axis */
+  text-decoration: none;
+  
+}
+
+.left, .right {
+  flex: 1; /* Distribute available space equally between left and right containers */
+  text-decoration: none;
 }
 
 
-  /* Container Styles */
+.center {
+  flex: 2; /* Allow the center container to take up twice as much space as left/right containers */
+}
+
+.flex-item {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  flex: 0 0 auto;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #f60303;
+}
+
+.flex-container.left img {
+  width: 500px;
+  height: 300px;
+  /* Other styles as needed */
+}
+
+
+/* Container Styles */
 
 .adhyay-container{
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #d3c0a2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-image: url('../images/bglite.jpg');
-    background-size: 100% 100%; /* Set background-size to cover entire container */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: black;
-        
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #d3c0a2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url('../images/bglite.jpg');
+  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: black;
+      
 }
 
 /* Novel Content Styles */
 
 .novel-content {
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
 }
 .adhyay-name
 {
-    font-family: 'Noto Sans Devanagari', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color: #9f6e04c7;  
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #9f6e04c7;  
 }
 
 .ovi {
-   /* font-family: "Tiro Devanagari Marathi", serif;*/
-    font-family: 'Noto Sans Devanagari', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color: #f60303;
+ /* font-family: "Tiro Devanagari Marathi", serif;*/
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #f60303;
 }
 
 .oviartha {
-    /*font-family: "Tiro Devanagari Marathi", serif;*/
-    font-family: 'Noto Sans Devanagari', sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    color: #050000c9;
+  /*font-family: "Tiro Devanagari Marathi", serif;*/
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #050000c9;
 }
 
 /* Pagination Styles */
 
 .page-content {
-    display: none;
-    padding: 20px;
+  display: none;
+  padding: 20px;
 }
 
 #page1 {
-    display: block;
+  display: block;
 }
 
 #pagination {
-    margin-top: 20px;
-    display: inline-block;
-    
+  margin-top: 20px;
+  display: inline-block;
+  
 }
 
 #pagination a {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid black;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 #pagination a:hover {
-    background-color: #d4d5d2;
+  background-color: #d4d5d2;
 }
 
 #pagination a.active {
-    background-color: #009900;
+  background-color: #009900;
 }
 
 /* Footer Styles */
 
 .bottom-flex-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(212, 168, 58, 0.8);
-    padding: 3px;
-    text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(212, 168, 58, 0.8);
+  padding: 3px;
+  text-align: left;
 }
 
 .bottom-flex-container p {
-    margin: 0;
+  margin: 0;
 }
 
 .bottom-flex-container a {
-    color: rgb(14, 12, 12);
-    margin: 0 10px;
-    font-weight: bold;
-    text-decoration: none;
+  color: rgb(14, 12, 12);
+  margin: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .bottom-flex-container a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .content {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* Pagination Button Styles */
 
 .pagination {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 button {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid black;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 button:hover {
-    background-color: #16bd16;
+  background-color: #16bd16;
 }
 
-  /* Apply a box-sizing border-box model globally */
-  * {
-    box-sizing: border-box;
-  }
-  
+/* Apply a box-sizing border-box model globally */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Example of a responsive image */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
  
-  /* Example of a responsive image */
-  .responsive-image {
-    max-width: 100%;
-    height: auto;
+/* Adjust styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .container,.flex-container,.left,.right ,.flex-item{
+    width: 90%;
+    padding: 10px;
   }
-  
-   
-  /* Adjust styles for smaller screens */
-  @media only screen and (max-width: 767px) {
-    .container,.flex-container,.left,.right ,.flex-item{
-      width: 90%;
-      padding: 10px;
-    }
-  }
+}
 
-  .about h1 {
-    font-size: 2em; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add spacing below the heading */
-    font-weight: bold;
-  }
+.about h1 {
+  font-size: 2em; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add spacing below the heading */
+  font-weight: bold;
+}
 
-    .about {
-    color: #000000;
-    font-size: 1em; 
-    font-weight: bold;
-    background-image: url('../images/om22.jpg'); /* Replace with the actual path to your image */
-    background-size: 100% 100%; /* Set background-size to cover entire container */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-  
-  }
-  
-  .about p {
-    line-height: 1.6;
-  }
+  .about {
+  color: #000000;
+  font-size: 1em; 
+  font-weight: bold;
+  background-image: url('../images/om22.jpg'); /* Replace with the actual path to your image */
+  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 
-  
-  .contact h1 {
-    font-size: 2em; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add spacing below the heading */
-    font-weight: bold;
-  }
-  .contact {
-    color: #171515;
-    font-size: 1em; 
-    font-weight: bold;
-    background-image: url('../images/omreal.jpg'); /* Replace with the actual path to your image */
-    background-size: 100% 100%; /* Set background-size to cover entire container */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-  
-  }
-  .contact p {
-    line-height: 1.6;
-    color: #e67d7d;
-  }
+}
 
-  h3
-  {
-    font-weight: bold;
-    color: #1473df;
-  }
-  
+.about p {
+  line-height: 1.6;
+}
+
+
+.contact h1 {
+  font-size: 2em; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add spacing below the heading */
+  font-weight: bold;
+}
+.contact {
+  color: #171515;
+  font-size: 1em; 
+  font-weight: bold;
+  background-image: url('../images/omreal.jpg'); /* Replace with the actual path to your image */
+  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.contact p {
+  line-height: 1.6;
+  color: #e67d7d;
+}
+
+h3
+{
+  font-weight: bold;
+  color: #1473df;
+}
+
+/* Your existing CSS styles */
+
+.pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+

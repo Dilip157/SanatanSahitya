@@ -4798,47 +4798,10 @@
 
 
         </div>
-    </div>
-
-    <div id="pagination">
-        <!-- Pagination links go here -->
-        <button onclick="previousPage()">Previous</button>
-        <a href="#" onclick="changePage(1)" data-page="1" class="active">1</a>
-        <a href="#" onclick="changePage(2)" data-page="2">2</a>
-        <a href="#" onclick="changePage(3)" data-page="3">3</a>
-        <a href="#" onclick="changePage(4)" data-page="4">4</a>
-        <a href="#" onclick="changePage(5)" data-page="5">5</a>
-        <a href="#" onclick="changePage(6)" data-page="6">6</a>
-        <a href="#" onclick="changePage(7)" data-page="7">7</a>
-        <a href="#" onclick="changePage(8)" data-page="8">8</a>
-        <a href="#" onclick="changePage(9)" data-page="9">9</a>
-        <a href="#" onclick="changePage(10)" data-page="10">10</a>
-        <a href="#" onclick="changePage(11)" data-page="11">11</a>
-        <a href="#" onclick="changePage(12)" data-page="12">12</a>
-        <a href="#" onclick="changePage(13)" data-page="13">13</a>
-        <a href="#" onclick="changePage(14)" data-page="14">14</a>
-        <a href="#" onclick="changePage(15)" data-page="15">15</a>
-        <a href="#" onclick="changePage(16)" data-page="16">16</a>
-        <a href="#" onclick="changePage(17)" data-page="17">17</a>
-        <a href="#" onclick="changePage(18)" data-page="18">18</a>
-        <a href="#" onclick="changePage(19)" data-page="19">19</a>
-        <a href="#" onclick="changePage(20)" data-page="20">20</a>
-        <a href="#" onclick="changePage(21)" data-page="21">21</a>
-        <a href="#" onclick="changePage(22)" data-page="22">22</a>
-        <a href="#" onclick="changePage(23)" data-page="23">23</a>
-        <a href="#" onclick="changePage(24)" data-page="24">24</a>
-        <a href="#" onclick="changePage(25)" data-page="25">25</a>
-        <a href="#" onclick="changePage(26)" data-page="26">26</a>
-        <a href="#" onclick="changePage(27)" data-page="27">27</a>
-        <a href="#" onclick="changePage(28)" data-page="28">28</a>
-        <a href="#" onclick="changePage(29)" data-page="29">29</a>
-        <a href="#" onclick="changePage(30)" data-page="30">30</a>
-        <a href="#" onclick="changePage(31)" data-page="31">31</a>
-        <a href="#" onclick="changePage(32)" data-page="32">32</a>
-        <a href="#" onclick="changePage(33)" data-page="33">33</a>
-        <a href="#" onclick="changePage(34)" data-page="34">34</a>
-
-        <button onclick="nextPage()">Next</button>
+        <div class="pagination-container">
+            <button id="prevBtn" onclick="changePage(-1)">Prev</button>
+            <button id="nextBtn" onclick="changePage(1)">Next</button>
+        </div>
     </div>
 
     <script src="../js/script.js"></script>

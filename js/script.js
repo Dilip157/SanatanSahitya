@@ -1,98 +1,29 @@
-// script.js
-
-const totalPages = 365;
-let currentPage = 1;
-
-function changePage(pageNumber) {
-    // Update the content based on the selected page number
-    const pages = document.querySelectorAll('.page-content');
-    pages.forEach(page => {
-        page.style.display = 'none';
-    });
-
-    const selectedPage = document.getElementById(`page${pageNumber}`);
-    selectedPage.style.display = 'block';
-
-    // Remove the 'active' class from all pagination buttons
-    document.querySelectorAll('#pagination a, #pagination button').forEach(button => {
-        button.classList.remove('active');
-    });
-
-    // Add the 'active' class to the clicked pagination button if it exists
-    const anchorButton = document.querySelector(`#pagination a[data-page="${pageNumber}"]`);
-    const buttonButton = document.querySelector(`#pagination button[data-page="${pageNumber}"]`);
-
-    if (anchorButton) {
-        anchorButton.classList.add('active');
-    }
-
-    if (buttonButton) {
-        buttonButton.classList.add('active');
-    }
-
-    currentPage = pageNumber;
-}
-
-function previousPage() {
-    const newPage = currentPage - 1;
-    if (newPage >= 1) {
-        changePage(newPage);
-    }
-}
-
-function nextPage() {
-    const newPage = currentPage + 1;
-    if (newPage <= totalPages) {
-        changePage(newPage);
-    }
-}
-
-let interactions = {
-    like: { isClicked: false, count: 0 },
-    comment: { isClicked: false, count: 0 },
-    share: { isClicked: false, count: 0 }
-  };
+document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = 1;
+    const totalPages = document.querySelectorAll(".page-content").length;
   
-  function toggleInteraction(interactionType) {
-    const button = document.getElementById(`${interactionType}Btn`);
-    const icon = document.getElementById(`${interactionType}Icon`);
-    const text = document.getElementById(`${interactionType}Text`);
-    const countElement = document.getElementById(`${interactionType}Count`);
+    function showPage(pageNumber) {
+      const pages = document.querySelectorAll(".page-content");
+      currentPage = pageNumber;
   
-    interactions[interactionType].isClicked = !interactions[interactionType].isClicked;
-    interactions[interactionType].count += interactions[interactionType].isClicked ? 1 : -1;
-  
-    button.classList.toggle(`${interactionType}ed`, interactions[interactionType].isClicked);
-    icon.innerHTML = interactions[interactionType].isClicked ? getInteractionIcon(interactionType) : getInactiveIcon(interactionType);
-    text.innerHTML = interactions[interactionType].isClicked ? `${interactionType.charAt(0).toUpperCase()}${interactionType.slice(1)}ed` : `${interactionType.charAt(0).toUpperCase()}${interactionType.slice(1)}`;
-    countElement.innerHTML = interactions[interactionType].count;
-  }
-  
-  function getInteractionIcon(interactionType) {
-    // Customize icons based on the interaction type
-    switch (interactionType) {
-      case 'like':
-        return '❤️';
-      case 'comment':
-        return '💬';
-      case 'share':
-        return '🔗';
-      default:
-        return '';
+      pages.forEach((page, index) => {
+        page.style.display = index + 1 === pageNumber ? "block" : "none";
+      });
     }
-  }
   
-  function getInactiveIcon(interactionType) {
-    // Customize inactive icons based on the interaction type
-    switch (interactionType) {
-      case 'like':
-        return '🤍';
-      case 'comment':
-        return '💬';
-      case 'share':
-        return '🔗';
-      default:
-        return '';
+    function changePage(offset) {
+      const nextPage = currentPage + offset;
+  
+      if (nextPage >= 1 && nextPage <= totalPages) {
+        showPage(nextPage);
+      }
     }
-  }
+  
+    // Initial page display
+    showPage(currentPage);
+  
+    // Event listeners for Prev and Next buttons
+    document.getElementById("prevBtn").addEventListener("click", () => changePage(-1));
+    document.getElementById("nextBtn").addEventListener("click", () => changePage(1));
+  });
   
