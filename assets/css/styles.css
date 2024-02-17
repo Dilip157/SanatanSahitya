@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-image: url('../images/homebg.png');
+  background-image: url('/assets/homebg.png');
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
- 
   
-}
+ 
+  }
 /* Header Styles */
 
 header {
@@ -19,16 +19,19 @@ header {
   padding: 1px;
   text-align: center;
 }
+
 h1
 {
   display: block;
-  font-size: 40px;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  color: #ee0b08;
+font-size: 40px;
+margin: 0 auto;
+font-weight: bold;
+color: #ee0b08;
+position: absolute;
+top: 7%;
+left: 50%;
+transform: translate(-50%, -50%);
+  
 }
 .header-flex-container {
   display: flex;
@@ -102,7 +105,7 @@ h1
   border: 2px solid #d3c0a2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-image: url('../images/bglite.jpg');
+  background-image: url('/assets/bglite.jpg');
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -262,7 +265,7 @@ button:hover {
   color: #000000;
   font-size: 1em; 
   font-weight: bold;
-  background-image: url('../images/om22.jpg'); /* Replace with the actual path to your image */
+  background-image: url('/assets/om22.jpg'); /* Replace with the actual path to your image */
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -288,7 +291,7 @@ button:hover {
   color: #171515;
   font-size: 1em; 
   font-weight: bold;
-  background-image: url('../images/omreal.jpg'); /* Replace with the actual path to your image */
+  background-image: url('/assets/omreal.jpg'); /* Replace with the actual path to your image */
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -321,5 +324,192 @@ h3
   padding: 10px 15px;
   margin: 0 5px;
   cursor: pointer;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Menu Toggle Icon Styles */
+.menu-toggle {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #555;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  width: 83px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px;
+}
+
+nav a:hover {
+  background-color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li.dropdown {
+    position: static;
+  }
+
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+}
+/* (existing styles remain unchanged) */
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#search-icon {
+  width: 20px;
+  height: 20px;
+  fill: white; /* Change the fill color as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* (existing styles remain unchanged) */
+}
+
+/* (existing styles remain unchanged) */
+
+/* (existing styles remain unchanged) */
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Set a max-width as needed */
+  float: right;
+ 
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 30px;
+  align-items: center;
+  
+}
+
+.header-content img {
+  max-height: 100px; /* Adjust the max height as needed */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* (existing styles remain unchanged) */
 }
 

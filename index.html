@@ -4,76 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Home</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Sanatan Sahitya-Hinduism The Sanatana Dharma</title>
 </head>
 
 <body>
+
     <header>
-        <h1>|| सार्थ श्री ज्ञानेश्वरी ||</h1>
+        <div class="header-content">
+            <h1>सनातन साहित्य</h1>
+            <img src="./assets/images/omreal.jpg" alt="Website Logo" width="200" height="500">
+        </div>
+
+        <div class="header">
+            <!-- Menu Toggle Icon -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search" oninput="searchResults(this.value)">
+                <button onclick="search()">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l6 6 1.5-1.5-6-6zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <nav>
+            <ul id="menuItems">
+                <li class="dropdown">
+                    <a href="#">हिंदू धर्मग्रंथ संग्रह</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./content/saint_dnyaneshwar_maharaj/sartha_shree_dnyaneshwari/index.html">सार्थ श्री ज्ञानेश्वरी</a></li>
+                        <li><a href="#">श्रीमद्भगवद्गीता</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">आरती संग्रह</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">गणपतीची आरती</a></li>
+                        <li><a href="#">दत्ताची आरती</a></li>
+                        <li><a href="#">ज्ञानदेवाची आरती</a></li>
+                        <li><a href="#">शंकराची आरती</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">अभंग संग्रह</a></li>
+                <li><a href="#">तीर्थक्षेत्रे</a></li>
+                <li><a href="#">छत्रपती शिवरायांचा इतिहास</a></li>
+                <li><a href="#">मदत व देणगी</a></li>
+            </ul>
+        </nav>
+
     </header>
 
-    <div class="container">
-        <div class="flex-container left">
-            <!-- Left side image -->
-            <img src="./images/SGHOME.png" style="width: 450px; height: 500px;" alt="Left Image">
-        </div>
+    <footer>
+        <p>&copy; 2024 wwww.sanatansahitya.com. All rights reserved.</p>
+    </footer>
 
-        <div class="flex-container center">
-            <!-- Center flex items -->
-            <div class="flex-item"><a href="./pages/adhyay1.html" title="अध्याय-१">अध्याय-१-अर्जुनविषादयोग</a></div>
-            <div class="flex-item"> <a href="./pages/adhyay2.html" title="अध्याय-२">अध्याय-२-सांख्ययोग</a></div>
-            <div class="flex-item"> <a href="./pages/adhyay3.html" title="अध्याय-३">अध्याय-३-कर्मयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay4.html" title="अध्याय-४">अध्याय-४-ज्ञाकर्मसंन्यासयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay5.html" title="अध्याय-५">अध्याय-५-संन्यासयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay6.html" title="अध्याय-६">अध्याय-६-आत्मसंयमयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay7.html" title="अध्याय-७">अध्याय-७-ज्ञानविज्ञानयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay8.html" title="अध्याय-८">अध्याय-८-अक्षरब्रह्मयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay9.html" title="अध्याय-९">अध्याय-९-राजविद्याराजगुह्ययोग</a>
-            </div>
-        </div>
-
-        <div class="flex-container right">
-            <!-- Right side flex items -->
-            <div class="flex-item"> <a href="./pages/adhyay10.html" title="अध्याय-१०">अध्याय-१०-विभूतियोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay11.html" title="अध्याय-११">अध्याय-११-विश्वरूपदर्शनयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay12.html" title="अध्याय-१२">अध्याय-१२-भक्तियोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay13.html"
-                    title="अध्याय-१३">अध्याय-१३-क्षेत्रक्षेत्रज्ञविभागयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay14.html" title="अध्याय-१४">अध्याय-१४-गुणञयविभागयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay15.html" title="अध्याय-१५">अध्याय-१५-पुरूषोत्तमविभागयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay16.html" title="अध्याय-१६">अध्याय-१६-दैवासुरसंपविभागयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay17.html" title="अध्याय-१७">अध्याय-१७-श्रद्धात्रयविभागयोग</a>
-            </div>
-            <div class="flex-item"> <a href="./pages/adhyay18.html" title="अध्याय-१८">अध्याय-१८-मोक्षसंन्याविभागयोग</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="content">
-
-        <footer class="bottom-flex-container">
-            <p>&copy; 2024 sanatansahitya.com</p>
-            <a href="./pages/about.html">About Us</a>
-            <a href="./pages/contact.html">Contact Us</a>
-        </footer>
-    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
