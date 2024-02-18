@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-image: url('/assets/homebg.png');
+  background-image: url('/assets/images/homebg.png');
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -105,7 +105,7 @@ transform: translate(-50%, -50%);
   border: 2px solid #d3c0a2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-image: url('/assets/bglite.jpg');
+  background-image: url('/assets/images/bglite.jpg');
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -265,7 +265,7 @@ button:hover {
   color: #000000;
   font-size: 1em; 
   font-weight: bold;
-  background-image: url('/assets/om22.jpg'); /* Replace with the actual path to your image */
+  background-image: url('/assets/images/om22.jpg'); /* Replace with the actual path to your image */
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -291,7 +291,7 @@ button:hover {
   color: #171515;
   font-size: 1em; 
   font-weight: bold;
-  background-image: url('/assets/omreal.jpg'); /* Replace with the actual path to your image */
+  background-image: url('/assets/images/omreal.jpg'); /* Replace with the actual path to your image */
   background-size: 100% 100%; /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
