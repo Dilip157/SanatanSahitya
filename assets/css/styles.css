@@ -23,7 +23,7 @@ header {
 h1
 {
   display: block;
-font-size: 40px;
+font-size: 10px;
 margin: 0 auto;
 font-weight: bold;
 color: #ee0b08;
@@ -33,6 +33,20 @@ left: 50%;
 transform: translate(-50%, -50%);
   
 }
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 10px; /* Adjust font size for smaller screens */
+      top: 10%; /* Adjust vertical position */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+      font-size: 10px; /* Further adjust font size for even smaller screens */
+      top: 10%; /* Further adjust vertical position */
+  }
+}
+
 .header-flex-container {
   display: flex;
   justify-content: space-between;
@@ -479,6 +493,7 @@ header {
 }
 
 .header-content {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -489,13 +504,32 @@ header {
 
 .header-content h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 20px;
   align-items: center;
+  text-align: right;
+  padding-right: 10px;
+  max-width: 100%; /* Ensure the content div takes up the available width */
+  
+   
   
 }
 
 .header-content img {
-  max-height: 100px; /* Adjust the max height as needed */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
+  
+ 
+   
+}
+
+@media screen and (max-width: 576px) {
+  .header-content img {
+      max-width: 100%; /* Reduce the image size for mobile screens */
+      text-align: right;
+      width: auto; /* Allow the image to resize proportionally */
+      max-height: 50px;
+     
+  }
 }
 
 footer {
