@@ -4,14 +4,16 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-image: url('/assets/images/homebg.png');
-  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-image: url('/assets/images/ss_logo.png');
+  background-size: 100% 100%;
+  /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  
- 
-  }
+
+
+}
+
 /* Header Styles */
 
 header {
@@ -20,30 +22,34 @@ header {
   text-align: center;
 }
 
-h1
-{
+h1 {
   display: block;
-font-size: 10px;
-margin: 0 auto;
-font-weight: bold;
-color: #ee0b08;
-position: absolute;
-top: 7%;
-left: 50%;
-transform: translate(-50%, -50%);
-  
+  font-size: 10px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #ee0b08;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
+
 @media screen and (max-width: 768px) {
   h1 {
-      font-size: 10px; /* Adjust font size for smaller screens */
-      top: 10%; /* Adjust vertical position */
+    font-size: 10px;
+    /* Adjust font size for smaller screens */
+    top: 10%;
+    /* Adjust vertical position */
   }
 }
 
 @media screen and (max-width: 576px) {
   h1 {
-      font-size: 10px; /* Further adjust font size for even smaller screens */
-      top: 10%; /* Further adjust vertical position */
+    font-size: 10px;
+    /* Further adjust font size for even smaller screens */
+    top: 10%;
+    /* Further adjust vertical position */
   }
 }
 
@@ -51,7 +57,7 @@ transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:  #e97909;
+  background-color: #e97909;
   padding: 10px;
   text-align: center;
 }
@@ -62,45 +68,17 @@ transform: translate(-50%, -50%);
   font-size: 20px;
   text-decoration: none;
 }
-/*Home Page */
-.container {
-  display: flex;
-  justify-content: space-between; /* Distribute items evenly across the main axis */
-  align-items: center; /* Center items along the cross axis */
-  height: 100vh; /* Set container height to 100% of the viewport height */
-  text-decoration: none;
-     
-}
 
 .flex-container {
   display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Center items along the cross axis */
+  flex-direction: column;
+  /* Arrange items vertically */
+  align-items: center;
+  /* Center items along the cross axis */
   text-decoration: none;
-  
+
 }
 
-.left, .right {
-  flex: 1; /* Distribute available space equally between left and right containers */
-  text-decoration: none;
-}
-
-
-.center {
-  flex: 2; /* Allow the center container to take up twice as much space as left/right containers */
-}
-
-.flex-item {
-  margin: 10px;
-  padding: 10px;
-  border: none;
-  text-decoration: none;
-  flex: 0 0 auto;
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  color: #f60303;
-}
 
 .flex-container.left img {
   width: 500px;
@@ -111,7 +89,7 @@ transform: translate(-50%, -50%);
 
 /* Container Styles */
 
-.adhyay-container{
+.adhyay-container {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
@@ -120,12 +98,13 @@ transform: translate(-50%, -50%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background-image: url('/assets/images/bglite.jpg');
-  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-size: 100% 100%;
+  /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   color: black;
-      
+
 }
 
 /* Novel Content Styles */
@@ -135,16 +114,16 @@ transform: translate(-50%, -50%);
   line-height: 1.6;
   text-align: center;
 }
-.adhyay-name
-{
+
+.adhyay-name {
   font-family: 'Noto Sans Devanagari', sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: #9f6e04c7;  
+  color: #9f6e04c7;
 }
 
 .ovi {
- /* font-family: "Tiro Devanagari Marathi", serif;*/
+  /* font-family: "Tiro Devanagari Marathi", serif;*/
   font-family: 'Noto Sans Devanagari', sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -173,7 +152,7 @@ transform: translate(-50%, -50%);
 #pagination {
   margin-top: 20px;
   display: inline-block;
-  
+
 }
 
 #pagination a {
@@ -260,27 +239,36 @@ button:hover {
   height: auto;
 }
 
- 
+
 /* Adjust styles for smaller screens */
 @media only screen and (max-width: 767px) {
-  .container,.flex-container,.left,.right ,.flex-item{
+
+  .container,
+  .flex-container,
+  .left,
+  .right,
+  .flex-item {
     width: 90%;
     padding: 10px;
   }
 }
 
 .about h1 {
-  font-size: 2em; /* Adjust the font size as needed */
-  margin-bottom: 10px; /* Add spacing below the heading */
+  font-size: 2em;
+  /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  /* Add spacing below the heading */
   font-weight: bold;
 }
 
-  .about {
+.about {
   color: #000000;
-  font-size: 1em; 
+  font-size: 1em;
   font-weight: bold;
-  background-image: url('/assets/images/om22.jpg'); /* Replace with the actual path to your image */
-  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-image: url('/assets/images/om22.jpg');
+  /* Replace with the actual path to your image */
+  background-size: 100% 100%;
+  /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -297,16 +285,21 @@ button:hover {
 
 
 .contact h1 {
-  font-size: 2em; /* Adjust the font size as needed */
-  margin-bottom: 10px; /* Add spacing below the heading */
+  font-size: 2em;
+  /* Adjust the font size as needed */
+  margin-bottom: 10px;
+  /* Add spacing below the heading */
   font-weight: bold;
 }
+
 .contact {
   color: #171515;
-  font-size: 1em; 
+  font-size: 1em;
   font-weight: bold;
-  background-image: url('/assets/images/omreal.jpg'); /* Replace with the actual path to your image */
-  background-size: 100% 100%; /* Set background-size to cover entire container */
+  background-image: url('/assets/images/omreal.jpg');
+  /* Replace with the actual path to your image */
+  background-size: 100% 100%;
+  /* Set background-size to cover entire container */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -316,13 +309,13 @@ button:hover {
   height: 100vh;
 
 }
+
 .contact p {
   line-height: 1.6;
   color: #e67d7d;
 }
 
-h3
-{
+h3 {
   font-weight: bold;
   color: #1473df;
 }
@@ -340,7 +333,8 @@ h3
   cursor: pointer;
 }
 
-body, ul {
+body,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -406,7 +400,7 @@ nav ul ul {
   background-color: #555;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
   display: inherit;
 }
 
@@ -444,10 +438,11 @@ nav a:hover {
     position: static;
   }
 
-  nav ul li:hover > ul {
+  nav ul li:hover>ul {
     display: inherit;
   }
 }
+
 /* (existing styles remain unchanged) */
 
 /* Search Bar Styles */
@@ -473,7 +468,8 @@ button {
 #search-icon {
   width: 20px;
   height: 20px;
-  fill: white; /* Change the fill color as needed */
+  fill: white;
+  /* Change the fill color as needed */
 }
 
 /* Responsive Design */
@@ -490,6 +486,7 @@ header {
   color: white;
   text-align: center;
   padding: 10px;
+
 }
 
 .header-content {
@@ -497,9 +494,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Set a max-width as needed */
+  max-width: 1200px;
+  /* Set a max-width as needed */
   float: right;
- 
+
+
 }
 
 .header-content h1 {
@@ -508,27 +507,32 @@ header {
   align-items: center;
   text-align: right;
   padding-right: 10px;
-  max-width: 100%; /* Ensure the content div takes up the available width */
-  
-   
-  
+  max-width: 100%;
+  /* Ensure the content div takes up the available width */
+
+
+
 }
 
 .header-content img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
-  height: auto; /* Maintain aspect ratio */
-  
- 
-   
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its container's width */
+  height: auto;
+  /* Maintain aspect ratio */
+
+
+
 }
 
 @media screen and (max-width: 576px) {
   .header-content img {
-      max-width: 100%; /* Reduce the image size for mobile screens */
-      text-align: right;
-      width: auto; /* Allow the image to resize proportionally */
-      max-height: 50px;
-     
+    max-width: 100%;
+    /* Reduce the image size for mobile screens */
+    text-align: right;
+    width: auto;
+    /* Allow the image to resize proportionally */
+    max-height: 50px;
+
   }
 }
 
@@ -547,3 +551,83 @@ footer {
   /* (existing styles remain unchanged) */
 }
 
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Align items to the top */
+}
+
+.left,
+.right {
+  width: 45%;
+  /* Adjust as needed */
+}
+
+.left img {
+  width: 100%;
+  height: auto;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  /* Add space between columns */
+  padding-left: 20px;
+  /* Add some spacing between the image and content */
+}
+
+.column {
+  flex: 0 0 48%;
+  /* Adjust width and space between columns as needed */
+}
+
+.flex-item {
+  margin-bottom: 10px;
+  /* Adjust as needed */
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  text-decoration: none;
+  flex: 0 0 auto;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #f60303;
+}
+
+.bottom-flex-container {
+  text-align: center;
+  margin-top: 10
+  px;
+  /* Add some space at the top */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .left,
+  .right {
+      width: 100%;
+  }
+
+  .right {
+      padding-left: 0; /* Reset padding */
+  }
+
+  .column {
+      grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left img {
+      width: 100%; /* Make the image take up the full width */
+      max-width: 100%; /* Ensure the image doesn't exceed its original size */
+      height: auto; /* Maintain aspect ratio */
+  }
+}
