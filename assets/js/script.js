@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Example: Redirect to a page based on the search term
     switch (searchTerm) {
-      case 'web design':
-        window.location.href = 'web-design.html';
+      case 'sarth shree dnyaneshwari':
+        window.location.href = 'index.html';
         break;
       case 'graphic design':
         window.location.href = 'graphic-design.html';
