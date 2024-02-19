@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background-image: url('/assets/images/ss_logo.png');
+  background-image: url('/assets/images/om22.jpg'); /* Replace 'background.jpg' with your image file */
   background-size: 100% 100%;
   /* Set background-size to cover entire container */
   background-repeat: no-repeat;
@@ -253,72 +253,76 @@ button:hover {
   }
 }
 
-.about h1 {
-  font-size: 2em;
-  /* Adjust the font size as needed */
-  margin-bottom: 10px;
-  /* Add spacing below the heading */
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  
+}
+.ceo-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.ceo-info img {
+  width: 150px; /* Set your custom width */
+  height: 150px; /* Set your custom height */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.about-sanatan-sahitya {
+  margin-top: 30px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #333;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.about {
-  color: #000000;
-  font-size: 1em;
-  font-weight: bold;
-  background-image: url('/assets/images/om22.jpg');
-  /* Replace with the actual path to your image */
-  background-size: 100% 100%;
-  /* Set background-size to cover entire container */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-
-}
-
-.about p {
-  line-height: 1.6;
+.contact-info svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 
-.contact h1 {
-  font-size: 2em;
-  /* Adjust the font size as needed */
-  margin-bottom: 10px;
-  /* Add spacing below the heading */
-  font-weight: bold;
-}
 
-.contact {
-  color: #171515;
-  font-size: 1em;
-  font-weight: bold;
-  background-image: url('/assets/images/omreal.jpg');
-  /* Replace with the actual path to your image */
-  background-size: 100% 100%;
-  /* Set background-size to cover entire container */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-
-}
-
-.contact p {
-  line-height: 1.6;
-  color: #e67d7d;
-}
-
-h3 {
-  font-weight: bold;
-  color: #1473df;
-}
 
 /* Your existing CSS styles */
 
