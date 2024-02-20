@@ -692,3 +692,54 @@ footer {
     flex-basis: calc(100% - 20px);
   }
 }
+
+
+
+.help-donate{
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+#qr-code {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+      padding: 10px;
+  }
+
+  .help-donate {
+      max-width: none; /* Remove max-width for smaller screens */
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  button {
+      padding: 8px 16px;
+  }
+}

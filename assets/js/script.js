@@ -68,6 +68,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function copyUpiId() {
+    var upiId = 'example@upi';
+    navigator.clipboard.writeText(upiId).then(function() {
+        alert('UPI ID copied to clipboard: ' + upiId);
+    }).catch(function(err) {
+        console.error('Unable to copy UPI ID', err);
+    });
+}
+
+// You can use a library like 'qrious' to generate QR codes or use an API.
+// For simplicity, let's assume the QR code image is already available.
+var qrCodeElement = document.getElementById('qr-code');
+var upiQRImagePath = '/assets/images/DC_QRCODE.jpg';
+
+var imgElement = document.createElement('img');
+imgElement.src = upiQRImagePath;
+imgElement.alt = 'UPI QR Code';
+
+imgElement.onload = function() {
+    qrCodeElement.appendChild(imgElement);
+};
+
+imgElement.onerror = function() {
+    console.error('Error loading the UPI QR Code image.');
+    qrCodeElement.innerHTML = 'Error loading the UPI QR Code image.';
+};
 
   
   
