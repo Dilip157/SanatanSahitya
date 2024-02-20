@@ -18,18 +18,18 @@ body {
 
 header {
   background-color: #e97909;
-  padding: 1px;
+  padding: 5px;
   text-align: center;
 }
 
 h1 {
   display: block;
-  font-size: 10px;
+  font-size: 25px;
   margin: 0 auto;
   font-weight: bold;
   color: #ee0b08;
   position: absolute;
-  top: 7%;
+  top: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -701,10 +701,7 @@ footer {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  color: #333;
+  
 }
 
 #qr-code {
@@ -715,7 +712,7 @@ button {
   background-color: #4caf50;
   color: #fff;
   border: none;
-  padding: 20px 20px;
+  padding: 5px 5px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
@@ -725,21 +722,3 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Media query for screens smaller than 600px */
-@media (max-width: 600px) {
-  body {
-      padding: 10px;
-  }
-
-  .help-donate {
-      max-width: none; /* Remove max-width for smaller screens */
-  }
-
-  h1 {
-      font-size: 20px;
-  }
-
-  button {
-      padding: 10px 16px;
-  }
-}
