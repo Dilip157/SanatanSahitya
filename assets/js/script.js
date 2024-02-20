@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function copyUpiId() {
-    var upiId = 'example@upi';
+    var upiId = '95552200287@ybl';
     navigator.clipboard.writeText(upiId).then(function() {
         alert('UPI ID copied to clipboard: ' + upiId);
     }).catch(function(err) {
