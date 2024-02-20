@@ -715,7 +715,7 @@ button {
   background-color: #4caf50;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
@@ -740,6 +740,6 @@ button:hover {
   }
 
   button {
-      padding: 8px 16px;
+      padding: 10px 16px;
   }
 }
