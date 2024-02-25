@@ -1,35 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Sanatan Sahitya</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Left Side Photo Card</title>
+    <style>
+        /* Add your custom styles here */
+        .custom-card {
+            margin: 20px;
+        }
+
+        .card-container {
+            display: flex;
+        }
+
+        .card-img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        /* Social Media Card Styles */
+        .social-card {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-card:hover {
+            background-color: #ddd;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>About Us - Sanatan Sahitya</h1>
-    </header>
-    <div class="container">
-        <div class="ceo-info">
-            <img src="/assets/images/ceo_dilip_dnyandev_chaudhari.jpg" alt="CEO Image">
-            <div>
-                <h2>CEO:Dilip Dnyandev Chaudhari</h2>
-                <p>Dilip Chaudhari is the CEO of Sanatan Sahitya. With his visionary leadership, Sanatan Sahitya has been reaching new heights in promoting traditional literature.</p>
+
+    <div class="w3-container custom-card">
+        <div class="w3-card-4 card-container">
+            <!-- Left side photo -->
+            <figure>
+                <img src="/assets/images/ceo_dilip_dnyandev_chaudhari.jpg" alt="Card Photo" class="card-img">
+                <figcaption>CEO: <span style="font-weight: bold; color: #ff0000; font-size: 14px;">Dilip Dnyandev Chaudhari</span></figcaption>
+            </figure>
+
+            <div class="card-content">
+                <header class="w3-container w3-blue">
+                    <h1>About Sanatan Sahitya</h1>
+                </header>
+
+                <p>सनातन साहित्य हा मराठी साहित्याच्या अभिनव संचालनाच्या तिरीने संपादित आणि प्रकाशित करणारा एक प्रसिद्ध
+                    अभिमत आहे. यातील लेखनाचा विषय साधारणतः सनातन धर्म, संस्कृती, तत्त्वज्ञान आणि इतिहास यांच्यावर आधारित
+                    असतो. सनातन साहित्याचा प्रमुख ध्येय संस्कृतीच्या भारतीय मूल्यांच्या संरक्षणासाठी समर्थन करणे आहे आणि
+                    साधन करणे आहे. या संस्थेचे मुख्य केंद्र महाराष्ट्रात आहे, परंतु त्याची प्रभावी अस्तित्व आणि प्रकाशन
+                    कार्यालये भारतात विविध ठिकाणी स्थित आहेत.</p>
+
+                <!-- Social Media Cards -->
+
+                <div class="w3-card-4 social-card">
+                    <a href="https://youtube.com/@sanatansahitya007?si=89cUY5xsZ_Pnhym7" target="_blank">
+                        <img src="/assets/images/youtube_icon.png" alt="YouTube Icon" class="social-icon">
+                        <p>Subscribe on YouTube</p>
+                    </a>
+                </div>
+
+                <div class="w3-card-4 social-card">
+                    <a href="https://www.instagram.com/sanatan_sahitya007" target="_blank">
+                        <img src="/assets/images/instagram_icon.jfif" alt="Instagram Icon" class="social-icon">
+                        <p>Follow us on Instagram</p>
+                    </a>
+                </div>
+
+                <div class="w3-card-4 social-card">
+                    <a href="https://www.facebook.com/profile.php?id=61556718722742" target="_blank">
+                        <img src="/assets/images/facebook_icon.png" alt="Facebook Icon" class="social-icon">
+                        <p>Follow us on Facebook</p>
+                    </a>
+                </div>
+
+
+
+                <!-- Original Footer Section -->
+                <footer class="w3-container w3-blue">
+                    <a href="/index.html">Home</a>
+                    <a href="/contact.html">Contact Us</a>
+                    <p>&copy; 2024 sanatansahitya.com</p>
+                </footer>
             </div>
-        </div>
-        <div class="about-sanatan-sahitya">
-            <h2>About Sanatan Sahitya</h2>
-            <p>सनातन साहित्य हा मराठी साहित्याच्या अभिनव संचालनाच्या तिरीने संपादित आणि प्रकाशित करणारा एक प्रसिद्ध अभिमत आहे. यातील लेखनाचा विषय साधारणतः सनातन धर्म, संस्कृती, तत्त्वज्ञान आणि इतिहास यांच्यावर आधारित असतो. सनातन साहित्याचा प्रमुख ध्येय संस्कृतीच्या भारतीय मूल्यांच्या संरक्षणासाठी समर्थन करणे आहे आणि साधन करणे आहे. या संस्थेचे मुख्य केंद्र महाराष्ट्रात आहे, परंतु त्याची प्रभावी अस्तित्व आणि प्रकाशन कार्यालये भारतात विविध ठिकाणी स्थित आहेत.</p>
         </div>
     </div>
 
-    <div class="content">
-      <footer class="bottom-flex-container">
-          <a href="/index.html">Home</a>
-          <a href="/contact.html">Contact Us</a>
-          <p>&copy; 2024 sanatansahitya.com</p>
-      </footer>
-  </div>
 </body>
+
 </html>
