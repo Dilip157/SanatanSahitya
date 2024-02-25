@@ -1,30 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sanatan Sahitya</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .w3-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .w3-btn {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
+
     <div class="container">
-        <div class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-            <p><a href="mailto:sanatansahitya.contact@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M22 5.08V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5.08M12 11L2 6l10 5 10-5-10 5z"></path></svg> Contact Us</a></p>
-        </div>
+        <form class="w3-container w3-card-4" onsubmit="sendEmail(); reset(); return false;">
+            <h2>Contact Us</h2>
+
+            <label for="name">Name</label>
+            <input class="w3-input" type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input class="w3-input" type="email" id="email" name="email" required>
+
+            <label for="email">Phone</label>
+            <input class="w3-input" type="phone" id="phone" name="phone" required>
+
+            <label for="message">Message</label>
+            <textarea class="w3-input" id="message" name="message" rows="4" required></textarea>
+
+            <button class="w3-btn w3-round-large w3-margin-top">Submit</button>
+        </form>
     </div>
-
-    <div class="content">
-      <footer class="bottom-flex-container">
-          <a href="/index.html">Home</a>
-          <a href="/about.html">About Us</a>
-          <p>&copy; 2024 sanatansahitya.com</p>
-      </footer>
-  </div>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken:'3645df21-4316-41cb-af89-13ea204a9dbd',
+                To: 'sanatansahitya.contact@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "Contact Form Message",
+                Body: "Name" + document.getElementById("name").value 
+                +"<br> Email: "+document.getElementById("email").value
+                +"<br> Phone no : "+document.getElementById("phone").value
+                +"<br> Message: "+document.getElementById("message").value
+            }).then(
+                message => alert("Message Sent Successfully !!!")
+            );
+        }
+    </script>
 </body>
+
 </html>
