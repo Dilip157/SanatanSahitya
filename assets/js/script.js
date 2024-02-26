@@ -53,14 +53,29 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Example: Redirect to a page based on the search term
     switch (searchTerm) {
-      case 'sarth shree dnyaneshwari':
-        window.location.href = 'index.html';
+        case 'granth':
+        window.location.href = 'content/granth_sangrah/index.html';
         break;
-        case 'dattachi aarti':
-        window.location.href = 'content/aarti_sangrah/dattachi_aarti.html';
+        case 'aarti':
+        window.location.href = 'content/aarti_sangrah/index.html';
         break;
-      case 'seo':
-        window.location.href = 'seo.html';
+      case 'abhang':
+        window.location.href = 'content/abhang_sangrah/index.html';
+        break;
+        case 'tirthkshetre':
+        window.location.href = 'content/tirthakshetre/index.html';
+        break;
+        case 'shivray':
+        window.location.href = 'content/chhatrapati_shivrayncha_itihas/index.html';
+        break;
+        case 'donate':
+        window.location.href = 'content/help_donate/index.html';
+        break;
+        case 'about':
+        window.location.href = 'about.html';
+        break;
+        case 'contact':
+        window.location.href = 'contact.html';
         break;
       default:
         alert('No results found for: ' + searchTerm);
