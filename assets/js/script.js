@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
       case 'sarth shree dnyaneshwari':
         window.location.href = 'index.html';
         break;
-      case 'graphic design':
-        window.location.href = 'graphic-design.html';
+        case 'dattachi aarti':
+        window.location.href = 'content/aarti_sangrah/dattachi_aarti.html';
         break;
       case 'seo':
         window.location.href = 'seo.html';
