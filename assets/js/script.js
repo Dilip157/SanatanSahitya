@@ -68,13 +68,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function copyUpiId() {
+  function copyPhonepayUpiId() {
     var upiId = '9552200287@ybl';
     navigator.clipboard.writeText(upiId).then(function() {
         alert('UPI ID copied to clipboard: ' + upiId);
     }).catch(function(err) {
         console.error('Unable to copy UPI ID', err);
     });
+}
+
+function copyGooglepayUpiId() {
+  var upiId = 'iamdilip7@okicici';
+  navigator.clipboard.writeText(upiId).then(function() {
+      alert('UPI ID copied to clipboard: ' + upiId);
+  }).catch(function(err) {
+      console.error('Unable to copy UPI ID', err);
+  });
 }
 
 // PhonePay
