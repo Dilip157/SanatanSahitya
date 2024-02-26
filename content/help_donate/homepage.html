@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Apps</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .container {
+      padding: 10px;
+    }
+
+    .container h4 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .container p {
+      color: #666;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card a {
+      text-decoration: none;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    <header class="header-flex-container">
+        <a href="/index.html">Home</a>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <h1 style="margin: 0 auto; text-align: center;">Make a UPI Payment</h1>
+    </header>
+
+    <div class="w3-container donate-section">
+        <h2>Donate Us</h2>
+        <p>Your support means the world to us. By donating, you're not just contributing financially, you're investing in our mission and helping us continue our work. Every contribution, no matter the size, makes a difference. Your generosity enables us to [describe specific activities or initiatives supported by donations, e.g., fund research, provide resources, support community projects, etc.]. Together, we can make a lasting impact. Thank you for considering donating to SanatanSahitya.com!</p>
+    </div>
+
+<div class="w3-container w3-center">
+  <h2 style="color: #333;">Donate Using UPI </h2>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <div class="card">
+        <a href="https://www.phonepe.com/" target="_blank">
+            <img src="/assets/images/phonepay.png" alt="PhonePe" style="width: 120px; height: auto;">
+          <div class="container">
+           <p>Click to open PhonePe app</p>
+            <button class="button">Open PhonePe</button>
+          </div>
+        </a>
+
+        <div class="help-donate">
+        
+            <p>Scan the QR code below or use the provided UPI ID to make the payment.</p>
+            <div id="qr-code1"></div>
+            <p> UPI ID:9552200287@ybl</p>
+            
+            <button onclick="copyUpiId()">Copy UPI ID</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half">
+      <div class="card">
+        <a href="https://pay.google.com/" target="_blank">
+            <img src="/assets/images/googlepay.jpg" alt="PhonePe" style="width: 150px; height: auto;">
+            <div class="container">
+            <p>Click to open Google Pay app</p>
+            <button class="button">Open Google Pay</button>
+          </div>
+        </a>
+
+        <div class="help-donate">
+        
+            <p>Scan the QR code below or use the provided UPI ID to make the payment.</p>
+            <div id="qr-code2"></div>
+            <p> UPI ID:iamdilip7@okicici</p>
+            
+            <button onclick="copyUpiId()">Copy UPI ID</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="content">
+  <footer class="bottom-flex-container">
+    <a href="/about.html">About Us</a>
+    <a href="/contact.html">Contact Us</a>
+    <p>&copy; 2024 sanatansahitya.com</p>
+</footer>
+</div>
+
+<script src="/assets/js/script.js"></script>
+
+</body>
+</html>

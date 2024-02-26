@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 }
 
-// You can use a library like 'qrious' to generate QR codes or use an API.
-// For simplicity, let's assume the QR code image is already available.
-var qrCodeElement = document.getElementById('qr-code');
-var upiQRImagePath = '/assets/images/DC_QRCODE.jpg';
+// PhonePay
+
+var qrCodeElement = document.getElementById('qr-code1');
+var upiQRImagePath = '/assets/images/phonepe_qr_code.jpg';
 
 var imgElement = document.createElement('img');
 imgElement.src = upiQRImagePath;
@@ -95,5 +95,24 @@ imgElement.onerror = function() {
     qrCodeElement.innerHTML = 'Error loading the UPI QR Code image.';
 };
 
-  
-  
+// GooglePay
+
+var qrCodeElementGooglePay = document.getElementById('qr-code2'); // Assuming qr-code2 is the ID for Google Pay QR code element
+var googlePayQRImagePath = '/assets/images/googlepay_qr_code.jpg'; // Path to Google Pay QR code image
+
+var imgElementGooglePay = document.createElement('img');
+imgElementGooglePay.src = googlePayQRImagePath;
+imgElementGooglePay.alt = 'Google Pay QR Code';
+
+imgElementGooglePay.onload = function() {
+    qrCodeElementGooglePay.appendChild(imgElementGooglePay);
+};
+
+imgElementGooglePay.onerror = function() {
+    console.error('Error loading the Google Pay QR Code image.');
+    qrCodeElementGooglePay.innerHTML = 'Error loading the Google Pay QR Code image.';
+};
+
+
+
+
