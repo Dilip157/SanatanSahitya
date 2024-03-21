@@ -10,23 +10,43 @@
         /* Style for video container */
         .video-container {
             display: flex;
+            flex-wrap: wrap; /* Allow videos to wrap to next line */
+            justify-content: space-between; /* Evenly distribute items */
         }
 
-        /* Style for video list */
-        .video-list {
-            width: 50%;
-            overflow-y: auto;
+        /* Style for video item */
+        .video-item {
+            width: calc(33.33% - 20px); /* Calculate width for 3 columns with spacing */
+            margin-bottom: 20px; /* Spacing between rows */
         }
 
-        /* Style for video description */
-        .video-description {
-            width: 50%;
-            padding: 20px;
+        /* Style for video card */
+        .video-card {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
         }
 
-        /* Hide by default */
-        .hide {
-            display: none;
+        /* Style for video iframe */
+        .video-iframe {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 768px) {
+            .video-item {
+                width: calc(50% - 20px); /* Two columns on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .video-item {
+                width: 100%; /* Single column on smaller screens */
+            }
         }
     </style>
 </head>
@@ -38,70 +58,104 @@
 
         <!-- Dropdown Tabs -->
         <div class="w3-bar">
-            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'videos')">Videos</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'images')">Image Gallery</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Shorts')">Shorts</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Videos')">Videos</button>
         </div>
 
         <!-- Videos Tab Content -->
-        <div id="videos" class="w3-container tabcontent">
+        <div id="Shorts" class="w3-container tabcontent">
             <div class="video-container">
-                <div class="video-list">
-                    <!-- Video List -->
-                    <div class="w3-card w3-margin" onclick="showDescription('video1')">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/tL0iyInZzIw?rel=0"
-                            frameborder="0" allowfullscreen></iframe>
-                        Kailas Mandir | Verul Leni| SanatanSahitya 
+                <!-- Video Items -->
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video1')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/DN7D2b5OFbA=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Kailas Mandir </p>
                     </div>
-                    <div class="w3-card w3-margin" onclick="showDescription('video2')">Video 2</div>
-                    <div class="w3-card w3-margin" onclick="showDescription('video3')">Video 3</div>
-                    <!-- Add more video items as needed -->
                 </div>
-                <!-- Video Description -->
-                <div id="video-description" class="video-description">
-                    <p>Select a video to see its description.</p>
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video2')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/vjUppMVhjgI=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Radha song</p>
+                    </div>
                 </div>
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video3')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/e-WHjZJhMFM=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Hare Krishna</p>
+                    </div>
+                </div>
+                <!-- Add more video items as needed -->
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video4')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/4Iv-g4EoLKE=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Jay Shree Ram </p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video5')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/L3OswRslOmw=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Chhatrapati Shivaji Maharaj</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video6')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/6GHQn33Tu5I=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Raghupati Raghav Raja Ram</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video6')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/cKUwrpy7ddw=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Bholenath - Har Har Mahadev</p>
+                    </div>
+                </div>
+
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video6')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/geYNoSLIS68=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Shree Ramnath Swami Mandir</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-card" onclick="showDescription('video6')">
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/OzTlo1tBQVc=0" frameborder="0"
+                            allowfullscreen></iframe>
+                            <p class="video-title">Jay Shree Krishna</p>
+                    </div>
+                </div>
+                <!-- Add more video items as needed -->
             </div>
         </div>
 
-        <!-- Images Tab Content (Empty for now) -->
-        <div id="images" class="w3-container tabcontent hide">
-            <h3>Image Gallery</h3>
-            <p>Image gallery content goes here.</p>
-        </div>
+        <!-- JavaScript -->
+        <script>
+            // Function to open tabs
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " w3-red";
+            }
+            // Open the default tab
+            document.getElementsByClassName("tablink")[0].click();
+        </script>
 
     </div>
-
-    <!-- JavaScript -->
-    <script>
-        // Function to open tabs
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " w3-red";
-        }
-
-        // Function to show video description
-        function showDescription(videoId) {
-            var descriptions = {
-                "video1": "Description for Video 1",
-                "video2": "Description for Video 2",
-                "video3": "Description for Video 3"
-                // Add descriptions for more videos as needed
-            };
-            document.getElementById("video-description").innerHTML = descriptions[videoId];
-        }
-
-        // Open the default tab
-        document.getElementsByClassName("tablink")[0].click();
-    </script>
 
 </body>
 
