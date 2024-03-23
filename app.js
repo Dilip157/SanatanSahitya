@@ -33,7 +33,7 @@ function loadRelatedVideos(videoId) {
 
     // Make a request to YouTube Data API
     var apiUrl = 'https://www.googleapis.com/youtube/v3/search';
-    var channelId = 'UCmN5wkDXdYOxqYNY2FqluXQ'; // Specify the channel ID
+    var channelId = 'sanatansahitya007'; // Specify the channel ID
     var maxResults = 5; // Number of related videos to display
 
     var url = `${apiUrl}?part=snippet&relatedToVideoId=${videoId}&type=video&channelId=${channelId}&maxResults=${maxResults}&key=${apiKey}`;
