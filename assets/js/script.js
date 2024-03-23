@@ -137,6 +137,3 @@ imgElementGooglePay.onerror = function() {
     qrCodeElementGooglePay.innerHTML = 'Error loading the Google Pay QR Code image.';
 };
 
-
-
-
